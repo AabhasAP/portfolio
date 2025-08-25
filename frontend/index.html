@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud GRC Engineer | AWS Security & Compliance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2D3748',
+                        secondary: '#4A5568',
+                        accent: '#4299E1',
+                        darkblue: '#1A365D',
+                        lightblue: '#EBF8FF',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1A365D 0%, #2D3748 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .skill-bar {
+            height: 8px;
+            border-radius: 4px;
+        }
+        .section-divider {
+            height: 3px;
+            width: 80px;
+            background-color: #4299E1;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-bold text-primary">Cloud <span class="text-accent">Enthusiast</span></div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-primary hover:text-accent transition">Home</a>
+                    <a href="#about" class="text-primary hover:text-accent transition">About</a>
+                    <a href="#skills" class="text-primary hover:text-accent transition">Skills</a>
+                    <a href="#experience" class="text-primary hover:text-accent transition">Experience</a>
+                    <a href="#projects" class="text-primary hover:text-accent transition">Projects</a>
+                    <a href="#contact" class="text-primary hover:text-accent transition">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-primary text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Cloud GRC Engineer</h1>
+                <h2 class="text-2xl md:text-3xl font-semibold mb-6">AWS Security & Compliance Specialist</h2>
+                <p class="text-lg mb-8 max-w-lg">Building secure, compliant cloud environments through automation and framework-driven governance.</p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="bg-accent hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition">Get In Touch</a>
+                    <a href="#projects" class="border border-white hover:bg-white hover:text-primary text-white px-6 py-3 rounded-lg font-medium transition">View Projects</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="bg-white p-1 rounded-full shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Cloud Security" class="w-64 h-64 rounded-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-primary mb-4">About Me</h2>
+            <div class="section-divider"></div>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center">
+                    <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" alt="Cloud Security" class="w-48 h-48 rounded-full object-cover shadow-lg">
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <p class="text-lg mb-6">
+                        I'm a Cloud Security Engineer specializing in Governance, Risk, and Compliance (GRC) with extensive experience in AWS environments. My focus is on bridging the gap between security requirements and technical implementation through automation and cloud-native solutions.
+                    </p>
+                    <p class="text-lg mb-6">
+                        With certifications including AWS Certified Security - Specialty and CISSP, I bring both technical depth and governance expertise to cloud security challenges. I excel at translating compliance frameworks (NIST, ISO, SOC 2) into actionable cloud controls.
+                    </p>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
+                        <div class="flex items-center">
+                            <i class="fas fa-shield-alt text-accent mr-2"></i>
+                            <span>Cloud Security</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-robot text-accent mr-2"></i>
+                            <span>Compliance Automation</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fab fa-aws text-accent mr-2"></i>
+                            <span>AWS Architecture</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-project-diagram text-accent mr-2"></i>
+                            <span>Framework Mapping</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-code text-accent mr-2"></i>
+                            <span>Infrastructure as Code</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-chart-line text-accent mr-2"></i>
+                            <span>Risk Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-primary mb-4">Technical Skills</h2>
+            <div class="section-divider"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                <!-- Cloud Security Column -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-secondary flex items-center">
+                        <i class="fas fa-cloud text-accent mr-2"></i> Cloud Security
+                    </h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>AWS Security Services</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full skill-bar">
+                                <div class="bg-accent skill-bar rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>IAM & Policy Design</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full skill-bar">
+                                <div class="bg-accent skill-bar rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Encryption & KMS</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full skill-bar">
+                                <div class="bg-accent skill-bar rounded-full" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Network Security</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full skill-bar">
+                                <div class="bg-accent skill-bar rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Compliance & GRC Column -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 text-secondary flex items-center">
+                        <i class="fas fa-balance-scale text-accent mr-2"></i> Compliance & GRC
+                    </h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>NIST CSF Implementation</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full skill-bar">
+                                <div class="bg-accent skill-bar rounded-full" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>ISO 27001 Mapping</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full skill-bar">
+                                <div class="bg-accent skill-bar rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>SOC 2 Controls</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full skill-bar">
+                                <div class="bg-accent skill-bar rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>GDPR Compliance</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full skill-bar">
+                                <div class="bg-accent skill-bar rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tools & Technologies -->
+            <div class="mt-16">
+                <h3 class="text-xl font-semibold mb-6 text-secondary text-center">Tools & Technologies</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <div class="bg-white px-4 py-2 rounded-lg shadow-sm flex items-center">
+                        <i class="fab fa-aws text-orange-500 mr-2"></i>
+                        <span>AWS</span>
+                    </div>
+                    <div class="bg-white px-4 py-2 rounded-lg shadow-sm flex items-center">
+                        <i class="fas fa-code text-blue-500 mr-2"></i>
+                        <span>Terraform</span>
+                    </div>
+                    <div class="bg-white px-4 py-2 rounded-lg shadow-sm flex items-center">
+                        <i class="fab fa-python text-blue-700 mr-2"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="bg-white px-4 py-2 rounded-lg shadow-sm flex items-center">
+                        <i class="fas fa-server text-green-600 mr-2"></i>
+                        <span>CloudFormation</span>
+                    </div>
+                    <div class="bg-white px-4 py-2 rounded-lg shadow-sm flex items-center">
+                        <i class="fas fa-shield-alt text-purple-500 mr-2"></i>
+                        <span>Security Hub</span>
+                    </div>
+                    <div class="bg-white px-4 py-2 rounded-lg shadow-sm flex items-center">
+                        <i class="fas fa-search text-yellow-500 mr-2"></i>
+                        <span>Config Rules</span>
+                    </div>
+                    <div class="bg-white px-4 py-2 rounded-lg shadow-sm flex items-center">
+                        <i class="fas fa-lock text-red-500 mr-2"></i>
+                        <span>GuardDuty</span>
+                    </div>
+                    <div class="bg-white px-4 py-2 rounded-lg shadow-sm flex items-center">
+                        <i class="fas fa-bug text-green-500 mr-2"></i>
+                        <span>Inspector</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-primary mb-4">Professional Experience</h2>
+            <div class="section-divider"></div>
+            
+            <div class="mt-12 space-y-8">
+                <!-- Experience 1 -->
+                <div class="flex flex-col md:flex-row border-b pb-8">
+                    <div class="md:w-1/4 mb-4 md:mb-0">
+                        <h3 class="text-xl font-semibold">Senior Cloud GRC Engineer</h3>
+                        <p class="text-accent">TechSecure Solutions</p>
+                        <p class="text-gray-500">Jan 2021 - Present</p>
+                    </div>
+                    <div class="md:w-3/4">
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Led the design and implementation of AWS security architecture for a multi-account environment serving 50+ business units, achieving SOC 2 Type II compliance within 6 months.</li>
+                            <li>Developed automated compliance checks using AWS Config Rules and Lambda, reducing manual audit efforts by 70%.</li>
+                            <li>Created framework mapping documentation linking NIST CSF controls to specific AWS services and configurations.</li>
+                            <li>Implemented organization-wide security baselines using AWS Control Tower and custom guardrails.</li>
+                            <li>Conducted risk assessments for new cloud services and provided security architecture recommendations.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Experience 2 -->
+                <div class="flex flex-col md:flex-row border-b pb-8">
+                    <div class="md:w-1/4 mb-4 md:mb-0">
+                        <h3 class="text-xl font-semibold">Cloud Security Engineer</h3>
+                        <p class="text-accent">FinTech Innovations Inc.</p>
+                        <p class="text-gray-500">Mar 2018 - Dec 2020</p>
+                    </div>
+                    <div class="md:w-3/4">
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Designed and deployed AWS security controls to meet PCI DSS requirements for payment processing systems.</li>
+                            <li>Automated evidence collection for audits using AWS Security Hub findings and custom Python scripts.</li>
+                            <li>Implemented least-privilege IAM policies using AWS Organizations SCPs and permission boundaries.</li>
+                            <li>Created security training materials for developers on secure cloud architecture patterns.</li>
+                            <li>Established continuous monitoring for security misconfigurations using AWS Config and Security Hub.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Experience 3 -->
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/4 mb-4 md:mb-0">
+                        <h3 class="text-xl font-semibold">Security Consultant</h3>
+                        <p class="text-accent">CloudGuard Advisors</p>
+                        <p class="text-gray-500">Jun 2015 - Feb 2018</p>
+                    </div>
+                    <div class="md:w-3/4">
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Conducted cloud security assessments for clients across healthcare, finance, and retail sectors.</li>
+                            <li>Developed custom compliance frameworks mapping industry regulations to AWS services.</li>
+                            <li>Implemented automated remediation workflows for common security findings using AWS Lambda.</li>
+                            <li>Authored whitepapers on cloud security best practices and presented at industry conferences.</li>
+                            <li>Assisted clients in preparing for ISO 27001 and HIPAA compliance audits.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-primary mb-4">Featured Projects</h2>
+            <div class="section-divider"></div>
+            
+            <div class="grid grid-cols-1 gap-8 mt-12">
+                <!-- Complete AutoComply Framework Project -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-xl card-hover transition duration-300">
+                    <div class="p-1 bg-gradient-to-r from-blue-500 to-blue-700">
+                        <div class="bg-white p-8">
+                            <div class="flex flex-col sm:flex-row justify-between items-start mb-6">
+                                <div>
+                                    <h3 class="text-3xl font-bold text-primary">AutoComply Framework</h3>
+                                    <p class="text-lg text-gray-600 mt-2">Automated Cloud Compliance & Governance Platform</p>
+                                </div>
+                                <div class="flex gap-2 mt-4 sm:mt-0">
+                                    <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full font-medium">Open Source</span>
+                                    <span class="bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full font-medium">Production Ready</span>
+                                </div>
+                            </div>
+                            
+                            <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+                                A comprehensive, scalable solution that automates cloud compliance evidence collection, analysis, and reporting across multiple regulatory frameworks. Reduces audit preparation time by 85% and provides continuous compliance monitoring.
+                            </p>
+                            
+                            <!-- Key Metrics -->
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8 p-6 bg-gray-50 rounded-lg">
+                                <div class="text-center">
+                                    <div class="text-3xl font-bold text-accent">85%</div>
+                                    <div class="text-sm text-gray-600">Reduction in Audit Time</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-3xl font-bold text-accent">200+</div>
+                                    <div class="text-sm text-gray-600">Pre-built Controls</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-3xl font-bold text-accent">4</div>
+                                    <div class="text-sm text-gray-600">Framework Supported</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-3xl font-bold text-accent">99.9%</div>
+                                    <div class="text-sm text-gray-600">Uptime SLA</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Architecture Overview -->
+                            <div class="mb-8">
+                                <h4 class="text-2xl font-semibold text-primary mb-4 flex items-center">
+                                    <i class="fas fa-project-diagram text-accent mr-3"></i>
+                                    Architecture Overview
+                                </h4>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1415&q=80" 
+                                         alt="AutoComply Architecture Diagram" 
+                                         class="w-full h-auto rounded-lg shadow-md">
+                                    <p class="text-sm text-gray-600 text-center mt-3">Microservices architecture with event-driven processing and serverless components</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Core Features -->
+                            <div class="mb-8">
+                                <h4 class="text-2xl font-semibold text-primary mb-4 flex items-center">
+                                    <i class="fas fa-star text-accent mr-3"></i>
+                                    Core Features
+                                </h4>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div class="bg-gray-50 p-4 rounded-lg">
+                                        <div class="flex items-center mb-3">
+                                            <div class="bg-accent text-white p-2 rounded-full mr-3">
+                                                <i class="fas fa-database"></i>
+                                            </div>
+                                            <h5 class="font-semibold">Automated Evidence Collection</h5>
+                                        </div>
+                                        <p class="text-gray-600">Real-time collection from AWS Config, CloudTrail, Security Hub, and custom checks with data normalization and validation</p>
+                                    </div>
+                                    <div class="bg-gray-50 p-4 rounded-lg">
+                                        <div class="flex items-center mb-3">
+                                            <div class="bg-accent text-white p-2 rounded-full mr-3">
+                                                <i class="fas fa-layer-group"></i>
+                                            </div>
+                                            <h5 class="font-semibold">Multi-Framework Support</h5>
+                                        </div>
+                                        <p class="text-gray-600">Comprehensive coverage for NIST CSF, ISO 27001, SOC 2, PCI DSS with customizable control mappings</p>
+                                    </div>
+                                    <div class="bg-gray-50 p-4 rounded-lg">
+                                        <div class="flex items-center mb-3">
+                                            <div class="bg-accent text-white p-2 rounded-full mr-3">
+                                                <i class="fas fa-chart-bar"></i>
+                                            </div>
+                                            <h5 class="font-semibold">Real-time Dashboards</h5>
+                                        </div>
+                                        <p class="text-gray-600">Interactive compliance dashboards with drill-down capabilities and trend analysis</p>
+                                    </div>
+                                    <div class="bg-gray-50 p-4 rounded-lg">
+                                        <div class="flex items-center mb-3">
+                                            <div class="bg-accent text-white p-2 rounded-full mr-3">
+                                                <i class="fas fa-robot"></i>
+                                            </div>
+                                            <h5 class="font-semibold">Automated Remediation</h5>
+                                        </div>
+                                        <p class="text-gray-600">One-click remediation workflows with integration to Jira, ServiceNow, and AWS Systems Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Technology Stack -->
+                            <div class="mb-8">
+                                <h4 class="text-2xl font-semibold text-primary mb-4 flex items-center">
+                                    <i class="fas fa-code text-accent mr-3"></i>
+                                    Technology Stack
+                                </h4>
+                                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                    <div class="text-center p-4 bg-gray-50 rounded-lg">
+                                        <i class="fab fa-aws text-3xl text-orange-500 mb-2"></i>
+                                        <h5 class="font-semibold">AWS</h5>
+                                        <p class="text-sm text-gray-600">Infrastructure</p>
+                                    </div>
+                                    <div class="text-center p-4 bg-gray-50 rounded-lg">
+                                        <i class="fab fa-python text-3xl text-blue-700 mb-2"></i>
+                                        <h5 class="font-semibold">Python</h5>
+                                        <p class="text-sm text-gray-600">Backend Logic</p>
+                                    </div>
+                                    <div class="text-center p-4 bg-gray-50 rounded-lg">
+                                        <i class="fas fa-server text-3xl text-purple-500 mb-2"></i>
+                                        <h5 class="font-semibold">Terraform</h5>
+                                        <p class="text-sm text-gray-600">Infrastructure as Code</p>
+                                    </div>
+                                    <div class="text-center p-4 bg-gray-50 rounded-lg">
+                                        <i class="fas fa-database text-3xl text-green-600 mb-2"></i>
+                                        <h5 class="font-semibold">DynamoDB</h5>
+                                        <p class="text-sm text-gray-600">Data Storage</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Implementation Results -->
+                            <div class="mb-8">
+                                <h4 class="text-2xl font-semibold text-primary mb-4 flex items-center">
+                                    <i class="fas fa-trophy text-accent mr-3"></i>
+                                    Implementation Results
+                                </h4>
+                                <div class="space-y-4">
+                                    <div class="flex items-start">
+                                        <span class="bg-green-100 text-green-800 p-2 rounded-full mr-4 mt-1">
+                                            <i class="fas fa-check"></i>
+                                        </span>
+                                        <div>
+                                            <h5 class="font-semibold">85% Reduction in Manual Audit Effort</h5>
+                                            <p class="text-gray-600">Automated evidence collection and reporting eliminated weeks of manual work</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <span class="bg-green-100 text-green-800 p-2 rounded-full mr-4 mt-1">
+                                            <i class="fas fa-check"></i>
+                                        </span>
+                                        <div>
+                                            <h5 class="font-semibold">Real-time Compliance Monitoring</h5>
+                                            <p class="text-gray-600">Continuous compliance status with instant alerts for control failures</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <span class="bg-green-100 text-green-800 p-2 rounded-full mr-4 mt-1">
+                                            <i class="fas fa-check"></i>
+                                        </span>
+                                        <div>
+                                            <h5 class="font-semibold">Cross-Framework Reporting</h5>
+                                            <p class="text-gray-600">Single platform for multiple compliance frameworks with unified reporting</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Action Buttons -->
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a href="https://github.com/AabhasAP" class="bg-accent hover:bg-blue-600 text-white px-8 py-4 rounded-lg font-medium transition flex items-center justify-center">
+                                    <i class="fab fa-github mr-3 text-xl"></i>
+                                    View My GitHub
+                                </a>
+                                <a href="https://autocomply-docs.readthedocs.io" class="border-2 border-accent text-accent hover:bg-accent hover:text-white px-8 py-4 rounded-lg font-medium transition flex items-center justify-center">
+                                    <i class="fas fa-book mr-3 text-xl"></i>
+                                    Read Documentation
+                                </a>
+                                <a href="https://autocomply-demo.herokuapp.com" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg font-medium transition flex items-center justify-center">
+                                    <i class="fas fa-play-circle mr-3 text-xl"></i>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional Projects -->
+                <div class="text-center mt-12">
+                    <h3 class="text-2xl font-bold text-primary mb-6">Other Notable Projects</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                            <h4 class="text-xl font-semibold mb-3">SecureCloud Deploy</h4>
+                            <p class="text-gray-600 mb-4">Terraform modules for secure AWS infrastructure deployment with built-in compliance controls</p>
+                            <div class="flex justify-between items-center">
+                                <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Terraform</span>
+                                <a href="https://github.com/AabhasAP" class="text-accent hover:text-blue-600">
+                                    <i class="fab fa-github"></i> View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                            <h4 class="text-xl font-semibold mb-3">PolicyGuard IAM</h4>
+                            <p class="text-gray-600 mb-4">Automated IAM policy analysis and least-privilege recommendation engine</p>
+                            <div class="flex justify-between items-center">
+                                <span class="bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full">Python</span>
+                                <a href="https://github.com/AabhasAP" class="text-accent hover:text-blue-600">
+                                    <i class="fab fa-github"></i> View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-primary mb-4">Certifications</h2>
+            <div class="section-divider"></div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+                <div class="bg-gray-50 p-6 rounded-lg flex flex-col items-center">
+                    <img src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Security-Specialty_badge.3419559c682629072f1eb968d59dea0741772c0f.png" alt="AWS Certified Security - Specialty" class="h-24 mb-4">
+                    <h3 class="font-semibold text-center">AWS Certified Security - Specialty</h3>
+                    <p class="text-sm text-gray-500 mt-1">2022</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg flex flex-col items-center">
+                    <img src="https://www.isc2.org/-/media/ISC2/Certifications/CISSP/cissp-badge-certification.ashx" alt="CISSP" class="h-24 mb-4">
+                    <h3 class="font-semibold text-center">Certified Information Systems Security Professional (CISSP)</h3>
+                    <p class="text-sm text-gray-500 mt-1">2020</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg flex flex-col items-center">
+                    <img src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Solutions-Architect-Professional_badge.5c083fa855fe82c1cf2d0c8b883c4ecfa3934bc0.png" alt="AWS Solutions Architect - Professional" class="h-24 mb-4">
+                    <h3 class="font-semibold text-center">AWS Solutions Architect - Professional</h3>
+                    <p class="text-sm text-gray-500 mt-1">2021</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg flex flex-col items-center">
+                    <img src="https://www.isc2.org/-/media/ISC2/Certifications/CCSP/ccsp-badge-certification.ashx" alt="CCSP" class="h-24 mb-4">
+                    <h3 class="font-semibold text-center">Certified Cloud Security Professional (CCSP)</h3>
+                    <p class="text-sm text-gray-500 mt-1">2019</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4">Get In Touch</h2>
+            <div class="section-divider bg-white"></div>
+            
+            <div class="flex flex-col md:flex-row mt-12">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+                    <p class="mb-6">Interested in discussing cloud security, compliance automation, or GRC strategy? Reach out through any of these channels:</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="bg-accent p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Email</h4>
+                                <p class="text-gray-300">aabhaspandey237@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-accent p-3 rounded-full mr-4">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">LinkedIn</h4>
+                                <p class="text-gray-300">linkedin.com/in/grccloudengineer</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-accent p-3 rounded-full mr-4">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">GitHub</h4>
+                                <p class="text-gray-300">github.com/AabhasAP</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-accent p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Location</h4>
+                                <p class="text-gray-300">New Delhi, India (Remote available)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 md:pl-12">
+                    <h3 class="text-xl font-semibold mb-4">Send a Message</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block mb-1">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 rounded bg-darkblue border border-gray-600 focus:outline-none focus:ring-2 focus:ring-accent">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-1">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 rounded bg-darkblue border border-gray-600 focus:outline-none focus:ring-2 focus:ring-accent">
+                        </div>
+                        <div>
+                            <label for="subject" class="block mb-1">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-2 rounded bg-darkblue border border-gray-600 focus:outline-none focus:ring-2 focus:ring-accent">
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-1">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 rounded bg-darkblue border border-gray-600 focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
+                        </div>
+                        <button type="submit" class="bg-accent hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition w-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-darkblue text-gray-300 py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="text-xl font-bold text-white">Aabhas Pandey</div>
+                    <p class="mt-2">Cloud Security & Compliance Engineering</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/AabhasAP" class="hover:text-white transition"><i class="fab fa-github"></i></a>
+                    <a href="#" class="hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-white transition"><i class="fas fa-blog"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2023 Cloud Enthusiast. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple mobile menu toggle
+        document.querySelector('button').addEventListener('click', function() {
+            const nav = document.querySelector('.hidden.md\\:flex');
+            nav.classList.toggle('hidden');
+            nav.classList.toggle('flex');
+            nav.classList.toggle('flex-col');
+            nav.classList.toggle('absolute');
+            nav.classList.toggle('top-16');
+            nav.classList.toggle('left-0');
+            nav.classList.toggle('right-0');
+            nav.classList.toggle('bg-white');
+            nav.classList.toggle('p-4');
+            nav.classList.toggle('shadow-md');
+            nav.classList.toggle('space-y-4');
+            nav.classList.toggle('space-x-8');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // AutoComply Demo Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add demo functionality to the "Live Demo" button
+            const demoButton = document.querySelector('a[href="https://autocomply-demo.herokuapp.com"]');
+            if (demoButton) {
+                demoButton.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    // Show loading state
+                    this.innerHTML = '<i class="fas fa-spinner fa-spin mr-3 text-xl"></i>Loading Demo...';
+                    
+                    // Simulate API call to our backend
+                    fetch('/api/compliance-status')
+                        .then(response => response.json())
+                        .then(data => {
+                            // Show demo modal with compliance data
+                            showDemoModal(data);
+                            this.innerHTML = '<i class="fas fa-play-circle mr-3 text-xl"></i>Live Demo';
+                        })
+                        .catch(error => {
+                            console.error('Error:', error);
+                            this.innerHTML = '<i class="fas fa-play-circle mr-3 text-xl"></i>Live Demo';
+                            alert('Demo service is currently unavailable. Please try again later.');
+                        });
+                });
+            }
+
+            // Form submission handler
+            const contactForm = document.querySelector('form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const submitButton = this.querySelector('button[type="submit"]');
+                    const originalText = submitButton.textContent;
+                    
+                    submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                    submitButton.disabled = true;
+                    
+                    // Simulate form submission to backend
+                    const formData = {
+                        name: document.getElementById('name').value,
+                        email: document.getElementById('email').value,
+                        subject: document.getElementById('subject').value,
+                        message: document.getElementById('message').value
+                    };
+                    
+                    fetch('/api/contact', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(formData)
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        alert('Message sent successfully! We\'ll get back to you soon.');
+                        contactForm.reset();
+                        submitButton.textContent = originalText;
+                        submitButton.disabled = false;
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        alert('There was an error sending your message. Please try again.');
+                        submitButton.textContent = originalText;
+                        submitButton.disabled = false;
+                    });
+                });
+            }
+        });
+
+        function showDemoModal(complianceData) {
+            // Create modal HTML
+            const modalHTML = `
+                <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+                    <div class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+                        <div class="bg-gradient-to-r from-blue-500 to-blue-700 p-4 text-white">
+                            <div class="flex justify-between items-center">
+                                <h3 class="text-2xl font-bold">AutoComply Live Demo</h3>
+                                <button onclick="closeDemoModal()" class="text-white text-2xl">&times;</button>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-blue-800 mb-2">Current Compliance Status</h4>
+                                    <div class="text-3xl font-bold text-blue-600">${complianceData.overallStatus}%</div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
+                                        <div class="bg-blue-600 h-2 rounded-full" style="width: ${complianceData.overallStatus}%"></div>
+                                    </div>
+                                </div>
+                                <div class="bg-green-50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-green-800 mb-2">Controls Checked</h4>
+                                    <div class="text-3xl font-bold text-green-600">${complianceData.controlsChecked}</div>
+                                    <p class="text-sm text-green-600 mt-1">Across ${complianceData.frameworks.length} frameworks</p>
+                                </div>
+                            </div>
+                            
+                            <h4 class="font-semibold text-gray-700 mb-3">Framework Compliance</h4>
+                            <div class="space-y-3 mb-6">
+                                ${complianceData.frameworks.map(fw => `
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span>${fw.name}</span>
+                                            <span>${fw.compliance}%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-blue-500 h-2 rounded-full" style="width: ${fw.compliance}%"></div>
+                                        </div>
+                                    </div>
+                                `).join('')}
+                            </div>
+                            
+                            <h4 class="font-semibold text-gray-700 mb-3">Recent Findings</h4>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <div class="space-y-3">
+                                    ${complianceData.recentFindings.map(finding => `
+                                        <div class="flex items-start">
+                                            <span class="${finding.status === 'PASSED' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'} p-1 rounded-full mr-3 mt-1">
+                                                <i class="fas ${finding.status === 'PASSED' ? 'fa-check' : 'fa-exclamation-triangle'}"></i>
+                                            </span>
+                                            <div>
+                                                <h5 class="font-medium">${finding.control}</h5>
+                                                <p class="text-sm text-gray-600">${finding.description}</p>
+                                            </div>
+                                        </div>
+                                    `).join('')}
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6 flex justify-end">
+                                <button onclick="closeDemoModal()" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg mr-3">Close</button>
+                                <button onclick="runComplianceScan()" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg flex items-center">
+                                    <i class="fas fa-sync-alt mr-2"></i> Run New Scan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            // Add modal to document
+            const modalDiv = document.createElement('div');
+            modalDiv.innerHTML = modalHTML;
+            document.body.appendChild(modalDiv);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeDemoModal() {
+            const modal = document.querySelector('.fixed.inset-0');
+            if (modal) {
+                modal.remove();
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        function runComplianceScan() {
+            const button = document.querySelector('button:contains("Run New Scan")');
+            if (button) {
+                const originalText = button.innerHTML;
+                button.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Scanning...';
+                button.disabled = true;
+                
+                fetch('/api/run-scan', {
+                    method: 'POST'
+                })
+                .then(response => response.json())
+                .then(data => {
+                    closeDemoModal();
+                    alert('Compliance scan completed! Status: ' + data.status);
+                    button.innerHTML = originalText;
+                    button.disabled = false;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Scan failed. Please try again.');
+                    button.innerHTML = originalText;
+                    button.disabled = false;
+                });
+            }
+        }
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=aabhas001/aaabhas" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
